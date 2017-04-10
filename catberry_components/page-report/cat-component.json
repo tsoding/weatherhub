@@ -1,0 +1,5 @@
+{
+	"name": "page-report",
+	"template": "./template.hbs",
+	"errorTemplate": "./error.hbs"
+}

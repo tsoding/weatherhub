@@ -1,0 +1,5 @@
+{
+	"name": "page-index",
+	"template": "./template.hbs",
+	"errorTemplate": "./error.hbs"
+}
