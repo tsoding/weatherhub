@@ -10,5 +10,5 @@
 // http://catberry.org/documentation#routing
 
 module.exports = [
-	'/:name[Pages,GitHubName]'
+    '/:name[Pages,GitHubName]'
 ];

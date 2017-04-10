@@ -1,30 +1,30 @@
 {
-	"name": "catberry-project",
-	"version": "0.0.0",
-	"description": "Empty project based on Catberry Framework",
-	"main": "./server.js",
-	"browser": {
-		"./config/environment.json": "./config/browser.json"
-	},
-	"author": "Catberry",
-	"license": "MIT",
-	"dependencies": {
-		"catberry": "^9.0.0",
-		"catberry-handlebars": "^3.0.1",
-		"catberry-uhr": "^5.0.1",
-		"catberry-logger": "^2.0.0",
-		"express": "^4.15.2",
-		"serve-static": "^1.12.1",
-		"errorhandler": "^1.5.0"
-	},
-	"engines": {
-		"node": ">=6.10.0"
-	},
-	"scripts": {
-		"start": "npm run release",
-		"release": "node ./build.js release && node ./server.js release",
-		"debug": "node ./build.js & node ./server.js",
-		"debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
-	}
+    "name": "catberry-project",
+    "version": "0.0.0",
+    "description": "Empty project based on Catberry Framework",
+    "main": "./server.js",
+    "browser": {
+        "./config/environment.json": "./config/browser.json"
+    },
+    "author": "Catberry",
+    "license": "MIT",
+    "dependencies": {
+        "catberry": "^9.0.0",
+        "catberry-handlebars": "^3.0.1",
+        "catberry-uhr": "^5.0.1",
+        "catberry-logger": "^2.0.0",
+        "express": "^4.15.2",
+        "serve-static": "^1.12.1",
+        "errorhandler": "^1.5.0"
+    },
+    "engines": {
+        "node": ">=6.10.0"
+    },
+    "scripts": {
+        "start": "npm run release",
+        "release": "node ./build.js release && node ./server.js release",
+        "debug": "node ./build.js & node ./server.js",
+        "debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
+    }
 }
 

@@ -2,7 +2,7 @@
 
 // configuration
 const isRelease = process.argv.length === 3 ?
-	process.argv[2] === 'release' : undefined;
+    process.argv[2] === 'release' : undefined;
 
 // catberry application
 const catberry = require('catberry');

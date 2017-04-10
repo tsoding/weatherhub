@@ -1,5 +1,5 @@
 {
-	"name": "label",
-	"template": "./template.hbs",
-	"errorTemplate": "./error.hbs"
+    "name": "label",
+    "template": "./template.hbs",
+    "errorTemplate": "./error.hbs"
 }

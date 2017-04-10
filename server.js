@@ -5,7 +5,7 @@ const path = require('path');
 
 // configuration
 const config = require('./config/environment.json');
-const isRelease = process.argv.length === 3 ?	process.argv[2] === 'release' : undefined;
+const isRelease = process.argv.length === 3 ?    process.argv[2] === 'release' : undefined;
 config.publicDirectoryPath = path.join(__dirname, 'public');
 config.server.port = config.server.port || 3000;
 config.isRelease = isRelease === undefined ? config.isRelease : isRelease;
@@ -14,8 +14,8 @@ config.isRelease = isRelease === undefined ? config.isRelease : isRelease;
 const catberry = require('catberry');
 const cat = catberry.create(config); // the Catberry application object
 cat.events.on('ready', () => {
-	const logger = cat.locator.resolve('logger');
-	logger.info(`Ready to handle incoming requests on port ${config.server.port}`);
+    const logger = cat.locator.resolve('logger');
+    logger.info(`Ready to handle incoming requests on port ${config.server.port}`);
 });
 
 // register Catberry plugins needed on the server
@@ -41,6 +41,6 @@ const errorhandler = require('errorhandler');
 app.use(errorhandler());
 
 http
-	.createServer(app)
-	.listen(config.server.port);
+    .createServer(app)
+    .listen(config.server.port);
 

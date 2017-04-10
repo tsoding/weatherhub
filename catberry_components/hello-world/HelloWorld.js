@@ -8,13 +8,13 @@
 
 class HelloWorld {
 
-	/**
-	 * Gets data for the component's template.
-	 * @returns {Promise<Object>} Promise of data.
-	 */
-	render() {
-		return this.$context.getStoreData();
-	}
+    /**
+     * Gets data for the component's template.
+     * @returns {Promise<Object>} Promise of data.
+     */
+    render() {
+        return this.$context.getStoreData();
+    }
 }
 
 module.exports = HelloWorld;
